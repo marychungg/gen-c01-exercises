@@ -1,0 +1,189 @@
+    body {
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1px;
+    font-size: 16px;
+    color: gray;
+    width: 100%;
+}
+
+
+/* header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+    width: 100%;
+    padding: 16px 24px;
+}
+
+.logo img {
+    height: 45px;
+} 
+
+.logo {
+    font-size: 32px;
+
+}
+
+.logo .titleA {
+    color: rgb(78, 78, 78);
+    font-weight: bold;
+}
+
+.logo .titleB {
+    color: gray;
+    font-weight: normal;
+}
+
+.content span{
+    margin-right: 16px;
+    font-size: 24px;
+}
+
+.mobile {
+    display: none;
+  }
+/* responsive */
+@media only screen and (max-width: 400px) {
+    .desktop {
+      display: none;
+    }
+    .mobile {
+      display: flex;
+      align-items: center;
+      width: 100%;
+    }
+}
+
+
+/* banner */
+.banner {
+    background-color: rgb(206, 206, 206);
+    display: flex;
+}
+
+.banner .picture {
+    margin: 32px 24px;
+}
+
+.banner .content {
+    color: rgb(68, 68, 68);
+    font-weight: bold;
+    font-size: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+}
+
+button {
+    background-color: rgb(65, 65, 65);
+        border: none;
+        color: white;
+        padding: 8px 0;
+        text-align: center;
+        font-size: 32px;
+}
+
+
+/* practicing */
+.practicing {
+    display: flex;
+    justify-content: space-around;
+    margin: 32px 0 32px 24px;
+}
+
+.emanuel {
+    width: 60%;
+}
+
+.practicing .picture {
+    display: block;
+    flex-direction: column;
+    width: 65%;
+}
+
+
+.practicing h1 {
+    font-size: 46px;
+    font-weight: bold;
+    color: rgb(68, 68, 68);
+    padding: 32px 0 24px 0;
+}
+
+.card h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: rgb(68, 68, 68);
+}
+
+p {
+    font-size: 24px;
+
+}
+
+.name {
+    padding: 32px 0;
+    font-size: 20px;
+}
+
+
+/* Start learning */
+.container-fluid {
+    background-color: rgb(231, 231, 231);
+    width: 100%;
+    padding: 32px 72px;
+}
+
+.container-fluid h1 {
+    padding: 32px;
+    font-weight: bold;
+    color: rgb(68, 68, 68);
+}
+
+.container-fluid .row {
+    padding-bottom: 24px;
+}
+
+.card-body {
+    padding: 16px 16px 24px 16px;
+}
+
+.container-fluid p {
+    font-size: 16px;
+}
+
+/* exhibit */
+.exhibit {
+    display: flex;
+    margin: 24px 32px;
+    width: 100%;
+}
+
+.exhibit h1 {
+    font-weight: bold;
+    color: rgb(68, 68, 68);
+}
+
+.exhibit .urban {
+    width: 60%;
+}
+
+ .content {
+
+ }
+
+ .exhibit .picture {
+    width: 40%;
+
+ }
+
+
+ /* footer */
+ footer {
+     display: flex;
+     justify-content: space-between;
+     padding: 16px 24px;
+ }

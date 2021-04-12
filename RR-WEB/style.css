@@ -1,13 +1,14 @@
-    body {
+body {
     display: block;
     font-family: 'Open Sans', sans-serif;
     letter-spacing: 1px;
     font-size: 16px;
     color: gray;
     width: 100%;
+    width: 1399px;
+    margin: 0 auto;
 }
-
-
+          
 /* header */
 header {
     display: flex;
@@ -19,11 +20,11 @@ header {
 }
 
 .logo img {
-    height: 45px;
+    height: 32px;
 } 
 
 .logo {
-    font-size: 32px;
+    font-size: 24px;
 
 }
 
@@ -42,18 +43,17 @@ header {
     font-size: 24px;
 }
 
+/* responsive */
 .mobile {
     display: none;
   }
-/* responsive */
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 480px) {
     .desktop {
       display: none;
     }
     .mobile {
-      display: flex;
-      align-items: center;
-      width: 100%;
+      display: block;
+
     }
 }
 
@@ -71,11 +71,12 @@ header {
 .banner .content {
     color: rgb(68, 68, 68);
     font-weight: bold;
-    font-size: 32px;
+    font-size: 24px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 40%;
+    margin-right: 24px;
 }
 
 button {
@@ -84,7 +85,7 @@ button {
         color: white;
         padding: 8px 0;
         text-align: center;
-        font-size: 32px;
+        font-size: 24px;
 }
 
 
@@ -107,38 +108,46 @@ button {
 
 
 .practicing h1 {
-    font-size: 46px;
+    font-size: 32px;
     font-weight: bold;
     color: rgb(68, 68, 68);
     padding: 32px 0 24px 0;
 }
 
 .card h2 {
-    font-size: 32px;
+    font-size: 24px;
     font-weight: bold;
     color: rgb(68, 68, 68);
 }
 
-p {
-    font-size: 24px;
+.card h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 8px 0;
+}
 
+.card-body {
+    margin: 16px 16px 24px 16px;
+}
+
+p {
+    font-size: 16px;
 }
 
 .name {
     padding: 32px 0;
-    font-size: 20px;
+    font-size: 12px;
 }
 
 
 /* Start learning */
 .container-fluid {
     background-color: rgb(231, 231, 231);
-    width: 100%;
     padding: 32px 72px;
 }
 
 .container-fluid h1 {
-    padding: 32px;
+    padding-bottom: 32px;
     font-weight: bold;
     color: rgb(68, 68, 68);
 }
@@ -165,25 +174,21 @@ p {
 .exhibit h1 {
     font-weight: bold;
     color: rgb(68, 68, 68);
+    padding: 24px 24px 8px 0;
 }
 
 .exhibit .urban {
     width: 60%;
 }
 
- .content {
-
+.exhibit .content {
+    width: 100%;
  }
-
- .exhibit .picture {
-    width: 40%;
-
- }
-
 
  /* footer */
  footer {
      display: flex;
      justify-content: space-between;
+     margin-top: 32px;
      padding: 16px 24px;
  }

@@ -4,33 +4,33 @@ body {
     letter-spacing: 1px;
     font-size: 16px;
     color: gray;
-    width: 100%;
-    width: 1399px;
     margin: 0 auto;
 }
 
+
 /* responsive */
+
 .mobile {
     display: none;
-  }
-          
+}
+
+
 /* header */
+
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 64px;
-    width: 100%;
     padding: 16px 24px;
 }
 
 .logo img {
     height: 32px;
-} 
+}
 
 .logo {
     font-size: 24px;
-
 }
 
 .logo .titleA {
@@ -43,90 +43,102 @@ header {
     font-weight: normal;
 }
 
-.content span{
-    margin-right: 16px;
+.content span {
+    margin-right: 1rem;
     font-size: 24px;
 }
 
 @media only screen and (max-width: 600px) {
     .desktop {
-      display: none;
+        display: none;
     }
     .mobile {
         display: block;
+        justify-content: center;
     }
 }
 
+
 /* banner */
+
 .banner {
     background-color: rgb(206, 206, 206);
     display: flex;
 }
 
-.banner .picture {
+.left_pannel {
     margin: 32px 24px;
+    width: 60%;
+}
+
+.left_pannel img {
+    width: 100%;
 }
 
 .banner .content {
     color: rgb(68, 68, 68);
     font-weight: bold;
-    font-size: 24px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 40%;
-    margin-right: 24px;
+    margin-right: 2rem;
 }
 
 button {
     background-color: rgb(65, 65, 65);
-        border: none;
-        color: white;
-        padding: 8px 0;
-        text-align: center;
-        font-size: 24px;
+    border: none;
+    color: white;
+    padding: 0.5rem 0;
+    text-align: center;
+    font-size: 2rem;
 }
 
 
 /* practicing */
+
 .practicing {
     display: flex;
-    justify-content: space-around;
-    margin: 32px 0 32px 24px;
+    justify-content: space-between;
 }
 
-.emanuel {
-    width: 60%;
-}
-
-.practicing .picture {
-    display: block;
+.right_pannel {
+    display: flex;
     flex-direction: column;
-    width: 65%;
+    width: 40%;
 }
 
+.card {
+    justify-content: center;
+    align-items: center;
+}
+
+.practicing .all_card img {
+    width: 100%;
+    margin-top: 2rem;
+}
 
 .practicing h1 {
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: bold;
     color: rgb(68, 68, 68);
     padding: 32px 0 24px 0;
 }
 
 .card h2 {
-    font-size: 24px;
+    font-size: 1rem;
     font-weight: bold;
     color: rgb(68, 68, 68);
 }
 
 .card h3 {
-    font-size: 16px;
+    font-size: 0.5rem;
     font-weight: bold;
     margin: 8px 0;
 }
 
 .card-body {
-    margin: 16px 16px 24px 16px;
+    margin: 1rem 1rem 2rem 1rem;
 }
 
 p {
@@ -140,9 +152,10 @@ p {
 
 
 /* Start learning */
+
 .container-fluid {
     background-color: rgb(231, 231, 231);
-    padding: 32px 72px;
+    padding: 3rem 72px;
 }
 
 .container-fluid h1 {
@@ -163,7 +176,9 @@ p {
     font-size: 16px;
 }
 
+
 /* exhibit */
+
 .exhibit {
     display: flex;
     margin: 24px 32px;
@@ -182,12 +197,14 @@ p {
 
 .exhibit .content {
     width: 100%;
- }
+}
 
- /* footer */
- footer {
-     display: flex;
-     justify-content: space-between;
-     margin-top: 32px;
-     padding: 16px 24px;
- }
+
+/* footer */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+    padding: 16px 24px;
+}

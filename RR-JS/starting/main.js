@@ -35,7 +35,7 @@ class Field {
       }
     } 
   }
-  
+
   userInput() {
     this.print();
     this.winOrLose();
@@ -44,10 +44,10 @@ class Field {
         case "w":
           this.x -= 1;
           break;
-      case "s":
+        case "s":
           this.x += 1;
           break;
-      case "a":
+        case "a":
           this.y -= 1;
           break;
         case "d":

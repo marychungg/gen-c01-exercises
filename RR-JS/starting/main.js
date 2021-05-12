@@ -42,16 +42,16 @@ class Field {
     let userInput = prompt('Next Step?').toLowerCase();
     switch (userInput) {
         case "w":
-          this.y -= 1;
-          break;
-      case "s":
-          this.y += 1;
-          break;
-      case "a":
           this.x -= 1;
           break;
-        case "d":
+      case "s":
           this.x += 1;
+          break;
+      case "a":
+          this.y -= 1;
+          break;
+        case "d":
+          this.y += 1;
           break;
       }
       return this.winOrLose();

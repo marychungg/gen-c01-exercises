@@ -15,27 +15,9 @@ class Field {
 
   print () {
     for (let i=0; i < this.field.length; i++){
-      console.log (this.field[i].join(''));
+      console.log (this.field[i].join(' '));
     }
   }
-
-
-  winOrLose () {
-      let x = this.x;
-      let y = this.y;
-      if (y >=0 && y < this.field[0].length && x >=0 && x < this.field.length) {
-        if (this.field[x][y] === hole) {
-          console.log("You Lost!");
-          return true;
-        } else if(this.field[x][y] === hat) {
-          console.log("You Win!");
-          return true;
-        } else {
-            this.field[x][y] = pathCharacter;
-            return false;
-      } 
-    }
-   }
 
   userInput() {
     this.print();
@@ -53,11 +35,22 @@ class Field {
         case "d":
           this.y += 1;
           break;
+      default:
+        console.log('Wrong Step!Please use w,s,a,d!');
+        break;
       }
-      return this.winOrLose();
     }
-
-
-
 }
 
+const myField = new Field([
+  ['░', '░', '░', '░', 'O', 'O', 'O'],
+  ['░', 'O', '░', '░', '░', 'O', '░'],
+  ['░', '^', 'O', '░', '░', '░', '░'],
+  ['░', '░', 'O', '░', '░', 'O', '░'],
+  ['░', 'O', 'O', '░', '░', '░', 'O'],
+  ['O', 'O', '░', '░', 'O', '░', '░'],
+  ['░', '░', '░', '░', '*', '░', 'O'],
+  ['O', '░', '░', 'O', '░', 'O', '░'],
+]);
+
+myField.userInput()

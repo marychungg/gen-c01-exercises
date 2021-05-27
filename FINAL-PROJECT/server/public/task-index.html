@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group 6 Task App</title>
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="./task-index-style.css" type="text/css">
+
+    <!-- Bootstrap 4 Link-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css " integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l " crossorigin="anonymous ">
+
+    <!-- Font Awesome Link -->
+    <link href="./Resources/fontawesome-free-5.15.3-web/fontawesome-free-5.15.3-web/css/all.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!--------------------------------- Main ------------------------------------>
+
+    <!-- Nav Bar -->
+    <nav class="TaskAppNavBar navbar navbar-expand-lg navbar-light navbar-custom">
+        <div class="left-nav-bar mr-auto">
+
+            <a class="navbar-menu" href="# ">
+                <i class="fas fa-bars fa-lg "></i>
+            </a>
+            <a class="navbar-user" href="# ">
+                <i class="fas fa-user-circle fa-2x"></i>
+                <i class="fas fa-user-circle fa-2x"></i>
+                <i class="fas fa-user-circle fa-2x"></i>
+                <i class="fas fa-plus-circle mr-2"></i>
+            </a>
+        </div>
+
+        <div class="right-nav-bar ml-auto">
+            <a class="navbar-star" href="# ">
+                <i class="fas fa-star fa-lg"></i>
+            </a>
+            <a class="navbar-search" href="# ">
+                <i class="fas fa-search fa-lg"></i>
+            </a>
+        </div>
+    </nav>
+
+
+    <!-- Status Bar -->
+    <div class="status-bar-session card text-center">
+        <div class="card-header">
+            <ul class="nav nav-pills nav-fill">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">STUDY</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">WORK</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">FAMILY</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">OTHERS</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- Task Column Session-->
+    <div class="task-column-session d-flex flex-wrap flex-row justify-content-center">
+
+        <!-- Task List 1
+        <div class="task-list-kit card border-success mb-3 ">
+
+            <div class="card-header bg-transparent">
+                <span style="font-size: 1.2rem; font-weight: bold;">Study</span>
+                <div class="btn-group float-right">
+                    <a class="navbar-ellipsis-h float-right" href="# " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-ellipsis-h"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <button class="dropdown-item" type="button">Rename List</button>
+                        <button class="dropdown-item" type="button">Sorting</button>
+                        <button class="dropdown-item" type="button">Delete List</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="task-column-session-body card-body text-success" style="overflow-y: scroll;">
+
+                 ----------------Task Card 1 --------------------
+                <div class="task-card-kit ">
+                    <div class="clearfix">
+                        <button type="button " class="status-overlap rounded-pill btn btn-info float-left ">IN PROGRESS</button>
+                        <button type="button " class="star-overlap btn btn btn-outline-warning float-right "><i class="fas fa-star "></i></button>
+                    </div>
+
+                    <div class="card bg-light mb-3 ">
+                        <div class="card-body " data-toggle="modal" data-target="#ViewCard1Modal">
+                            <h5 class="card-title ">Learn Figma</h5>
+                            <p class="card-text ">This is Task 1. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+
+                            <div class="bg-transparent clearfix ">
+                                <button type="button " class="btn btn-light rounded-pill float-left "><i class="fas fa-clock "></i> 15 APR</button>
+                                <a class="navbar-user float-right " href="# ">
+                                    <i class="fas fa-user-circle fa-2x"></i>
+                                    <i class="fas fa-user-circle fa-2x"></i>
+                                    <i class="fas fa-user-circle fa-2x"></i>
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+            <div class="card-footer bg-transparent text-center ">
+                -- Button trigger modal --
+                <button type="button" class="btn" data-toggle="modal" data-target="#AddNewCardModal">+ Add New Card</button>
+            </div>
+
+
+
+        </div> -->
+
+        <!-- Task List 2-->
+        <div class="task-list-kit card border-success mb-3 ">
+
+            <div class="card-header bg-transparent">
+                <span style="font-size: 1.2rem; font-weight: bold;">Study</span>
+                <div class="btn-group float-right">
+                    <a class="navbar-ellipsis-h float-right" href="# " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-ellipsis-h"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <button class="dropdown-item" type="button">Rename List</button>
+                        <button class="dropdown-item" type="button">Sorting</button>
+                        <button class="dropdown-item" type="button">Delete List</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="task-column-session-body card-body text-success" style="overflow-y: scroll;">
+                <!-- Task Card 1 -->
+
+                <div id='card-fetch-area'></div>
+            </div>
+
+            <div class="card-footer bg-transparent text-center ">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn" data-toggle="modal" data-target="#AddNewCardModal">+ Add New Card</button>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+    <!--------------------------------- Modal ------------------------------------>
+
+    <!-- Modal of Add New Card -->
+    <div class="modal fade" id="AddNewCardModal" tabindex="-1" role="dialog" aria-labelledby="AddNewCardModalLabel" aria-hidden="true" style="max-width: 100%;">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Add New Card</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-left">
+                    <form method="POST" id='fetchAddCardForm' action='http://localhost:8080/todolist'>
+                        <label name='id' for="taskcard-name" class="hide col-form-label w-100"><span style="font-size: 1rem; font-weight: bold;">ID</span> 
+                            <input type='text' name='fetchId' id='fetchId' class="form-control" placeholder="ID" style="font-size: .9rem;"/>
+                        </label>
+                        <label name='name' for="taskcard-name" class="col-form-label w-100"><span style="font-size: 1rem; font-weight: bold;">Task Name:</span> 
+                            <input type='text' name='fetchName' id='fetchName' class="form-control" placeholder="Task Name" style="font-size: .9rem;"/>
+                        </label><br>
+                        <label name='description' for="taskcard-description" class="col-form-label w-100"><span style="font-size: 1rem; font-weight: bold;">Task Description:</span> 
+                            <textarea type='text' name='fetchDescription' id='fetchDescription' class="form-control" placeholder="Task Description" style="font-size: .9rem;"></textarea>
+                        </label><br>
+                        <label name='assignedto' for="colFormLabel" class="col-form-label w-100"><i class="fas fa-tags fa-sm m-1"></i><span style="font-size: 1rem; font-weight: bold;">Members:</span> 
+                            <input type='text' name='fetchAssignedto' id='fetchAssignedto' class="form-control" placeholder="Assign To " style="font-size: .9rem;"/>
+                        </label><br>
+                        <label name='duedate' for="example-date-input" class="col-form-label w-100"><i class="fas fa-clock fa-sm m-1"></i><span style="font-size: 1rem; font-weight: bold;">Due-Date:</span> 
+                            <input type="date" name='fetchDuedate' id='fetchDuedate' class="form-control" style="font-size: .9rem;"/>
+                        </label><br>
+                        <label name='status' class="col-form-label w-100"><span style="font-size: 1rem; font-weight: bold;">Status:</span> 
+                            <select class="form-control" name='fetchStatus' id='fetchStatus' style="font-size: .9rem;" required>
+                                <option value="TO DO">TO DO</option>
+                                <option value="IN PROGRESS">IN PROGRESS</option>
+                                <option value="REVIEW">REVIEW</option>
+                                <option value="DONE">DONE</option>
+                            </select>
+                        </label>
+                        <div class="modal-footer px-0 mt-4">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button id='fetchButton' type="submit button" class="btn btn-info" onclick="javascript:window.location.reload()">Add Card</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal of View Card 1-->
+    <!-- <div class="modal fade" id="ViewCard1Modal" tabindex="-1" role="dialog" aria-labelledby="ViewCard1ModalLabel" aria-hidden="true" style="max-width: 100%;">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ViewCardModalLabel">View Card</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-left">
+                    <form id='ViewCardForm'>
+                        <label name='id'>Id: 
+                            <input type='text' name='fetchId' id='fetchId' />
+                        </label><br>
+                        <label name='name'>Name: 
+                            <input type='text' name='fetchName' id='fetchName' />
+                        </label><br>
+                        <label name='description'>Description: 
+                            <input type='text' name='fetchDescription' id='fetchDescription' />
+                        </label><br>
+                        <label name='assignedto'>Assigned to: 
+                            <input type='text' name='fetchAssignedto' id='fetchAssignedto' />
+                        </label><br>
+                        <label name='duedate'>Due date: 
+                            <input type='text' name='fetchDuedate' id='fetchDuedate' />
+                        </label><br>
+                        <label name='status'>Status: 
+                            <input type='text' name='fetchStatus' id='fetchStatus' />
+                        </label><br>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal" data-toggle="modal" data-target="#EditCard1Modal"><i class="fas fa-edit mr-2"></i>Edit Card</button>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button id='delButton' type="submit button" class="btn btn-primary" onclick="javascript:window.location.reload()">Delete Card</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div> -->
+
+
+    <!-- Modal of Edit Card 1-->
+    <!-- <div class="modal fade" id="EditCard1Modal" tabindex="-1" role="dialog" aria-labelledby="EditCard1ModalLabel" aria-hidden="true" style="max-width: 100%;">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="EditCard1ModalLabel">Edit Card</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                </div>
+
+                <div class="modal-body text-left">
+                    <form method="PUT" id='fetchEditCardForm' action='http://localhost:8080/todolist/'>
+                        <label name='id'>Id: 
+                            <input type='text' name='putId' id='putId' value="haha"/>
+                        </label><br>
+                        <label name='name'>Name: 
+                            <input type='text' name='putName' id='putName' value="haha"/>
+                        </label><br>
+                        <label name='description'>Description: 
+                            <input type='text' name='putDescription' id='putDescription' value="haha"/>
+                        </label><br>
+                        <label name='assignedto'>Assigned to: 
+                            <input type='text' name='putAssignedto' id='putAssignedto' value="haha"/>
+                        </label><br>
+                        <label name='duedate'>Due date: 
+                            <input type='text' name='putDuedate' id='putDuedate' value="haha"/>
+                        </label><br>
+                        <label name='status'>Status: 
+                            <input type='text' name='putStatus' id='putStatus' value="haha"/>
+                        </label><br> 
+
+                        <div id="edit-card-fetch-area"></div>
+                        
+
+                        <div class="modal-footer">
+                            <button id='saveButton' type="submit button" class="btn btn-primary" onclick="javascript:window.location.reload()">Save Changes</button>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+
+                    </form>
+
+
+                </div>
+
+
+            </div>
+        </div>
+    </div> -->
+
+
+
+
+
+
+    <!--From Bruce Server-->
+
+
+    <!-- From Bruce Server-->
+
+
+
+
+
+    <!--------------------------------- Javascript ------------------------------------>
+    <script src="task-index.js" ></script>
+    <!-- <script src="deletefunction.js" ></script> -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>
